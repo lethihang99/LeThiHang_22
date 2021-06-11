@@ -19,8 +19,7 @@ namespace LeThiHang_22.Models
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<NhaCungCap>()
-                .Property(e => e.MaNhaCungCap)
-                .IsUnicode(false);
+                .Property(e => e.MaNhaCungCap);
 
             modelBuilder.Entity<NhaCungCap>()
                 .Property(e => e.TenNhaCungCap)
